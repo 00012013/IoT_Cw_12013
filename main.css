@@ -1,0 +1,36 @@
+body {
+    background-color: #f8f9fa;
+  }
+  .iot-layout {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .iot-title {
+    font-family: 'Arial', sans-serif;
+  }
+  .iot-title h1 {
+    font-size: 2.5rem;
+  }
+  .iot-section {
+    margin-top: 20px;
+  }
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  .iot-value {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .btn-custom {
+    width: 80px;
+    height: 35px;
+    font-size: 1rem;
+  }
+  
