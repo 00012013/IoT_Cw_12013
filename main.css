@@ -34,3 +34,6 @@ body {
     font-size: 1rem;
   }
   
+  .card-title{
+    font-weight: normal;
+  }

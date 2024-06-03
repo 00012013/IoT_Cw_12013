@@ -20,6 +20,7 @@ const firebaseConfig = {
   let water = 0;
   let motorValue = false;
   let lamp = false;
+  let motion = 0;
   
   // Database references
   const dbHumidity = database.ref("Humid");
@@ -28,6 +29,7 @@ const firebaseConfig = {
   const dbWater = database.ref("Water");
   const dbMotorStatus = database.ref("motorStatus");
   const dbLamp = database.ref("Lamp");
+  const dbMotion = database.ref("Motion")
   
   // Fetch data from Firebase and update UI
   dbHumidity.on("value", snapshot => {
@@ -60,6 +62,14 @@ const firebaseConfig = {
     updateButtonStatus("lampBtn", lamp);
   });
   
+    
+  dbMotion.on("value", snapshot => {
+    light = snapshot.val();
+    document.getElementById("motion_value").textContent = motion;
+  });
+  
+ 
+
   // Update button status based on database value
   function updateButtonStatus(btnId, value) {
     const btn = document.getElementById(btnId);
