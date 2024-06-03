@@ -47,7 +47,7 @@ const firebaseConfig = {
   
   dbWater.on("value", snapshot => {
     water = snapshot.val();
-    document.getElementById("water_value").textContent = `${water}%`;
+    document.getElementById("water_value").textContent = `${water}`;
   });
   
   dbMotorStatus.on("value", snapshot => {
