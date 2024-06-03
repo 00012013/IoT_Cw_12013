@@ -70,10 +70,10 @@ const firebaseConfig = {
   
   // Button click handlers
   document.getElementById("motorBtn").addEventListener("click", () => {
-    firebase.database().ref("motorStatus").set(!motorValue);
+    firebase.database().ref("motorStatus").set(!motorValue ? 1 : 0);
   });
   
   document.getElementById("lampBtn").addEventListener("click", () => {
-    firebase.database().ref("Lamp").set(!lamp);
+    firebase.database().ref("Lamp").set(!lamp ?1 :0);
   });
   

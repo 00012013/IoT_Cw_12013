@@ -17,59 +17,53 @@
       <div class="iot-layout">
         <div class="iot-title my-4">
           <h1 class="text-center">
-            <span class="text-primary">Greenhouse</span> Dashboard
+            Greenhouse Dashboard
           </h1>
         </div>
-        <hr class="mb-4" />
         <section class="iot-section">
           <div class="row">
             <div class="col-md-6">
-              <h2 class="text-center mb-4 text-success">Sensors</h2>
+              <h2 class="text-center mb-4 ">Sensors</h2>
               <div class="mb-3">
-                <div class="card">
                   <div class="card-body">
                     <div class="row">
                       <div class="col-md-6">
                         <div class="card-title">Temperature</div>
-                        <p class="iot-value text-success" id="temperature_value">
+                        <p class="iot-value " id="temperature_value">
                           0°C
                         </p>
                       </div>
                       <div class="col-md-6">
                         <div class="card-title">Humidity</div>
-                        <p class="iot-value text-primary" id="humidity_value">
+                        <p class="iot-value " id="humidity_value">
                           0%
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
               <div class="mb-3">
-                <div class="card">
                   <div class="card-body">
                     <div class="row">
                       <div class="col-md-6">
                         <div class="card-title">Light</div>
-                        <p class="iot-value text-warning" id="light_value">0</p>
+                        <p class="iot-value " id="light_value">0</p>
                       </div>
                       <div class="col-md-6">
                         <div class="card-title">Water</div>
-                        <p class="iot-value text-danger" id="water_value">0%</p>
-                      </div>
+                        <p class="iot-value " id="water_value">0%</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-6">
-              <h2 class="text-center mb-4 text-info">Actuators</h2>
+              <h2 class="text-center mb-4 ">Actuators</h2>
               <div class="row mb-4">
                 <div class="col-md-12">
-                  <ul class="list-group">
-                    <li class="list-group-item">
+                  <ul class="card-body">
                       <div class="row">
-                        <div class="col-md-6">DC Motor</div>
+                        <div class="col-md-5 mb-4 card-title">DC Motor</div>
                         <div class="col-md-6 text-end">
                           <button
                             id="motorBtn"
@@ -80,10 +74,8 @@
                           </button>
                         </div>
                       </div>
-                    </li>
-                    <li class="list-group-item">
                       <div class="row">
-                        <div class="col-md-6">Lamp</div>
+                        <div class="col-md-5 card-title">Lamp</div>
                         <div class="col-md-6 text-end">
                           <button
                             id="lampBtn"
@@ -94,7 +86,6 @@
                           </button>
                         </div>
                       </div>
-                    </li>
                   </ul>
                 </div>
               </div>
